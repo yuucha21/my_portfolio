@@ -7,17 +7,17 @@ import Image from 'next/image';
 
 const works = [
   {
-    image: '/images/Cheifoon_mill.jpg', // 画像のパスを適切に変更してください
+    image: '/public/images/Cheifoon_mill.jpg', // 画像のパスを適切に変更してください
     title: '作品 1',
     description: '作品 1 の説明'
   },
   {
-    image: '/images/Cheifoon_slim.jpg', // 画像のパスを適切に変更してください
+    image: '/public/images/Cheifoon_slim.jpg', // 画像のパスを適切に変更してください
     title: '作品 2',
     description: '作品 2 の説明'
   },
   {
-    image: '/images/planly.jpg', // 画像のパスを適切に変更してください
+    image: '/public/images/planly.jpg', // 画像のパスを適切に変更してください
     title: '作品 3',
     description: '作品 3 の説明'
   }
