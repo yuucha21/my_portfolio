@@ -3,6 +3,7 @@ import { initializeScrollAnimations } from './animation.js';
 import Head from 'next/head';
 import React, { useState , useEffect} from 'react';
 import styles from './page.module.scss';
+import Image from 'next/image'; 
 
 const works = [
   {
@@ -174,7 +175,9 @@ const Home: React.FC = () => {
             >
               {works.map((work, index) => (
                 <div key={index} className={styles.carouselItem}>
-                  <img src={work.image} alt={work.title} className={styles.image} />
+                  <div className={styles.image}>  
+                    <Image src={work.image} alt={work.title} width={500} height={300} />
+                  </div>  
                   <div className={styles.legend}>
                     <h3></h3>
                   </div>
