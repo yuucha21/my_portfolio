@@ -60,7 +60,7 @@ const Home: React.FC = () => {
           href="https://fonts.googleapis.com/css2?family=Kranky&display=swap"
           rel="stylesheet"
         />
-        <script src="myapp/app/script.js"></script>
+        <script async src="myapp/app/script.js"></script>
       </Head>
 
       <header className={styles.header}>
