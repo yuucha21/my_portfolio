@@ -1,0 +1,8 @@
+$background-color: #000;
+$text-color: #000;
+
+body {
+  background-color: $background-color;
+  margin: 0; /* ブラウザデフォルトの余白を削除 */
+  color: $text-color;
+}

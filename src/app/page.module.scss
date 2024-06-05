@@ -1,0 +1,399 @@
+
+.container {
+    text-align: center;
+    background-color: #FFF8E9;
+    color: #000;
+    min-height: 300vh;
+    width: 100%; /* コンテナの幅を100%に設定 */
+    align-items: center; /* 垂直方向に中央揃え */
+    justify-content: center; /* 子要素を水平方向に中央揃え */
+    width: 100%; /* 親要素の全幅を使用 */
+    height: 100vh; /* 全画面の高さを使用 */
+    margin: 0 auto; /* コンテナ内で中央に配置 */
+    max-width: 1600px; /* 必要に応じて最大幅を設定 */
+    position: relative; /* 絶対位置の基準として設定 */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .navigationList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .navigator {
+    font-family: 'Kranky', cursive;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 150px;
+  }
+
+  .title {
+    grid-column: 1;
+    grid-row: 1 / span 3; /* 全4行をカバーする */
+    padding: 10px;
+    position: relative; 
+
+  }
+  
+  .titleText {
+    font-family: 'Kranky', cursive;
+    writing-mode: vertical-rl;
+    font-size: 5.8rem;
+    position: absolute; /* `title`要素内で絶対配置 */
+    left: 5%; /* 水平方向の中央 */
+    transform: translate(-50%, -20%); /* 真ん中に合わせるために50%シフト */
+    color: #000000;
+    white-space: nowrap; /* 改行を防ぐ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* テキストシャドウを設定 */
+  }
+
+  @media (max-width: 992px) {
+    .titleText {
+      font-size: 5rem;
+      left: 3.8%;
+    }
+  }
+  @media (max-width: 768px) {
+    .titleText {
+      font-size: 4rem;
+      left: 2.5%;
+    }
+  }
+  
+  .mainDiv {
+    display: grid;
+    grid-template-columns: 1fr 2fr　0.5fr;      /* 列の設定 */
+    grid-template-rows: auto 2fr 2fr auto auto auto; /* 各行の高さを均等に2分割して3つ目の行も作成 */
+    width: 80%;
+    gap: 0 0;
+    padding: 3%;
+    margin: 0 auto; /* コンテナ内で中央に配置 */
+    align-items: center;
+  }
+  
+
+  .box1 {
+    grid-column: 2;
+    grid-row: 1 / span 1; /* 1行目から始まり、2行分の高さ */
+    border-left: 5px solid #000;
+    padding: 10px;
+    margin-left: -130%;
+    
+  }
+
+  .Name_Hama{
+    font-size: 4rem;
+    transform: translate(-20%, -20%);
+    font-family:  sans-serif;
+  }
+
+  .Name_Keigo{
+    font-size: 4rem;
+    transform: translate(-20%, -20%);
+    font-family:  sans-serif;
+  }
+    /* レスポンシブスタイル */
+@media (max-width: 1200px) {
+  .box1 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .box1 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box1 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 576px) {
+  .box1 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box1 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 15%;
+  }
+}
+
+  
+  .box2 {
+    grid-column: 2;
+    grid-row: 2 / span 2; /* 3行目から始まり、2行分の高さ */
+    border-top: 5px solid #000;
+    border-left: 5px solid #000;
+    border-right: 5px solid #000;
+    padding: 10px;
+    margin-left: -130%;
+  }
+
+  /* レスポンシブスタイル */
+@media (max-width: 1200px) {
+  .box2 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .box2 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box2 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 576px) {
+  .box2 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .box2 {
+    grid-column: 1 / span 2; /* box3と同じ幅に設定 */
+    margin-left: 15%;
+  }
+}
+
+  .fadeIn {
+    opacity: 1; /* フェードイン後に完全に表示 */
+  }
+
+  .profile{
+    font-size: 3.2rem;
+    font-family:  sans-serif;
+  }
+  .box3 {
+      grid-column: 1 / span 2;   /* 1列目と2列目をカバーする */
+      grid-row: 4 / span 1;      /* 4行目に配置する */
+      border: 5px solid #000;
+      padding: 10px;
+      margin-left: 15%;
+    }
+  .box4 {
+      grid-column: 2; /* 右端の列に配置 */
+      grid-row: 5 / span 1; /* 必要に応じて複数行をカバー */
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      writing-mode: vertical-rl; /* 縦書きに回転 */
+      font-size: 4rem;
+      padding: 10px;
+      border: 5px solid #000;
+      justify-self: end;
+      margin-top: 10%;   
+      margin-left: -130%;
+  }
+
+  .works{
+    font-size: 100%;
+    font-family:  sans-serif;
+  }
+  
+  .worksSection {
+    display: flex;
+    justify-content: center; /* 子要素を水平方向に中央揃え */
+    align-items: center; /* 子要素を垂直方向に中央揃え */
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 100%; /* 必要に応じて調整 */
+    color: #000;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 120%;
+    height: 250%;
+    color: #000;
+  }
+  
+  .carouselInner {
+    display: flex;
+    transition: transform 0.5s ease;
+    color: #000;
+    height: 130%;
+  }
+  
+  .carouselItem {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 120%;
+    color: #000;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* 子要素を水平方向に中央揃え */
+    align-items: center; /* 子要素を垂直方向に中央揃え */
+  }
+  
+  .legend {
+    text-align: center;
+    padding: 10px;
+    color: #000;
+  }
+  
+  .carouselButtons {
+    position: absolute;
+    top: 47.5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    color: #000;
+    z-index: 10; 
+  }
+  
+  .carouselButtons button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+  }
+  .skill_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .skill_table th, .skill_table td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .skill_table th {
+    font-weight: bold;
+  }
+  .carouselButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+  }
+  
+  .carouselButtons button {
+    position: relative;
+    bottom: 120%;
+    background: none;
+    border: none;
+    display: flex;
+    color: #ccc;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0;
+  }
+  
+  .carouselButtons .activeButton {
+    color: #000;
+  }
+  
+  .carouselButtons .inactiveButton {
+    color: #ccc;
+  }
+  .box5{
+    width: 100%;
+    justify-content: center; /* 子要素を水平方向に中央揃え */
+    align-items: center; /* 子要素を垂直方向に中央揃え */
+    margin-top: 7%;
+    grid-column: 1 / span 2;   /* 1列目と2列目をカバーする */
+    grid-row: 6 / span 1;      /* 4行目に配置する */
+    border: 3px solid #000;
+    padding: 10px;
+ 
+  }
+  .actual_table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .actual_table th, .actual_table td {
+    padding-right: 0.5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  
+  .actual_table th {
+    font-weight: bold;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 30px;
+    background: #3c3c3c;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  /* ロゴ */
+  .header .logo {
+    padding: 0 20px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: .2em;
+  }
+  /* メニュー */
+  .header ul {
+    padding: 0 30px;
+  }
+  .header li {
+    display: inline-block;
+    padding: 0 6px;
+    font-size: 14px;
+    letter-spacing: .1em;
+  }
+  .header li a {
+    color: #fff;
+  }
+  /* メニューのリンクホバーで線 */
+  .header li a:hover {
+    text-decoration: underline;
+  }
