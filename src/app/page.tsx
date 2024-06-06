@@ -5,22 +5,26 @@ import React, { useState , useEffect} from 'react';
 import styles from './page.module.scss';
 import Image from 'next/image'; 
 
+import CheifoonMill from '../images/Cheifoon_mill.jpg';
+import CheifoonSlim from '../images/Cheifoon_slim.jpg';
+import Planly from 'myapp/public/images/planly.jpg';
+
 const works = [
   {
-    image: 'public/images/Cheifoon_mill.jpg', // 画像のパスを適切に変更してください
+    image: CheifoonMill,
     title: '作品 1',
-    description: '作品 1 の説明'
+    description: '作品 1 の説明',
   },
   {
-    image: '/images/Cheifoon_slim.jpg', // 画像のパスを適切に変更してください
+    image: CheifoonSlim,
     title: '作品 2',
-    description: '作品 2 の説明'
+    description: '作品 2 の説明',
   },
   {
-    image: '/images/planly.jpg', // 画像のパスを適切に変更してください
+    image: Planly,
     title: '作品 3',
-    description: '作品 3 の説明'
-  }
+    description: '作品 3 の説明',
+  },
 ];
 
 
