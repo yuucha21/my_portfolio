@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const works = [
   {
-    image: '/images/Cheifoon_mill.jpg', // 画像のパスを適切に変更してください
+    image: 'public/images/Cheifoon_mill.jpg', // 画像のパスを適切に変更してください
     title: '作品 1',
     description: '作品 1 の説明'
   },
